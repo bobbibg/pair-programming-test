@@ -17,18 +17,4 @@ We would like to make some improvements to this app
 
 ## To get started
 
-First fork the repository and clone into a local development environment.
-
-In the project directory, you can run:
-
-### ǹpm install`
-
-Install any dependencies
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You can try out this pair programming exercise on [Code Sandbox](https://codesandbox.io/s/pair-programming-test-ptiuv).
