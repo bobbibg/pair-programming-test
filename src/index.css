@@ -1,4 +1,10 @@
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,7 +13,91 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #333333;
+}
+
+button{
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.iphone {
+  display: inline-block;
+  margin: 30px;
+  background-color: #71abee;
+  border: 1px solid #447ec1;
+  padding: 0 20px 0 20px;
+  border-radius: 25px;
+  max-width: 100% !important;
+}
+
+.iphone-content {
+  width: 375px;
+  height: 667px;
+  border: 1px solid #000000;
+  background: #fff;
+  overflow-y: auto;
+  overflow-x: hidden
+}
+
+.iphone-small-round-top {
+  margin: 20px auto;
+  width: 5px;
+  height: 5px;
+  background-color: #447ec1;
+  border-radius: 50%;
+}
+
+.iphone-round-top-left {
+  float: left;
+  margin-left: 150px;
+  margin-top: -2px;
+  width: 9px;
+  height: 9px;
+  background-color: #447ec1;
+  border-radius: 50%;
+}
+
+.iphone-speaker {
+  margin: 15px auto;
+  margin-top: 20px;
+  width: 30px;
+  height: 5px;
+  background-color: #447ec1;
+  border-radius: 3px;
+}
+
+.iphone-button {
+  border-radius: 50%;
+  margin: 20px auto;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #447ec1;
+  background: none !important;
 }
