@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { PokemonContext } from '../App'
 import { PokemonItem } from './pokemon-item'
-import logo from './pokemon-logo.svg'
 
 export const PokemonList = () => {
   const { data, loading, error, getNextPage } = useContext(PokemonContext)
@@ -15,7 +14,7 @@ export const PokemonList = () => {
           padding: '30px 20px 10px',
         }}
       >
-        <img src={logo} alt="Pokemon logo" />
+        <img src="/pokemon-logo.svg" alt="Pokemon logo" />
       </header>
       <div style={{ padding: '20px 10px' }}>
         {loading && <div>Loading...</div>}
