@@ -6,7 +6,15 @@ export const PokemonList = () => {
   const { data, loading, error, getNextPage } = useContext(PokemonContext)
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: 'url(/pokeball-bg.png)',
+        backgroundPosition: '100% 40%',
+        backgroundAttachment: 'fixed',
+        backgroundSize: '60%',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <header
         style={{
           display: 'flex',

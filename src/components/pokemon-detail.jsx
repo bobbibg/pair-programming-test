@@ -72,6 +72,10 @@ export const PokemonDetail = () => {
         flexDirection: 'column',
         minHeight: '100%',
         filter: 'saturate(60%)',
+        backgroundImage: 'url(/pokeball-bg.png)',
+        backgroundPosition: '97% 15px',
+        backgroundSize: '65%',
+        backgroundRepeat: 'no-repeat',
         backgroundColor:
           pokemon.pokemon_v2_pokemonspecy.pokemon_v2_pokemoncolor.name,
       }}

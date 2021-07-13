@@ -16,11 +16,7 @@ export const PokemonItem = ({ pokemon }) => {
         overflow: 'hidden',
         padding: 20,
         borderRadius: 20,
-        border:
-          pokemon.pokemon_v2_pokemonspecy.pokemon_v2_pokemoncolor.name ===
-          'white'
-            ? '1px solid black'
-            : undefined,
+        boxShadow: '0px 0px 7px rgba(0,0,0,0.5)',
         backgroundColor:
           pokemon.pokemon_v2_pokemonspecy.pokemon_v2_pokemoncolor.name,
         filter: 'saturate(50%)',
