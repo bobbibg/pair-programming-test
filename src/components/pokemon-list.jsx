@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { PokemonContext } from '../App'
+import { PokemonContext } from '../context'
 import { PokemonItem } from './pokemon-item'
 
 export const PokemonList = () => {

@@ -4,6 +4,7 @@ import { PokemonTag } from './pokemon-tag'
 
 export const PokemonItem = ({ pokemon }) => {
   const history = useHistory()
+
   return (
     <li
       style={{

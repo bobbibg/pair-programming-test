@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
-import { PokemonContext } from '../App'
+import { PokemonContext } from '../context'
 import { PokemonTag } from './pokemon-tag'
 
 const PokemonStat = ({ title, value, showBar }) => {

@@ -1,48 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   ApolloClient,
   ApolloProvider,
-  useQuery,
   createHttpLink,
   InMemoryCache,
 } from '@apollo/client'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { GET_POKEMON } from './query'
+
 import { PokemonList } from './components/pokemon-list'
 import { PokemonDetail } from './components/pokemon-detail'
-
-export const PokemonContext = React.createContext({})
-export const PokemonProvider = ({ children }) => {
-  const limit = 30
-  const [currentOffset, setCurrentOffset] = useState(0)
-  const { data, loading, error, fetchMore } = useQuery(GET_POKEMON, {
-    variables: {
-      limit,
-      offset: currentOffset,
-    },
-  })
-
-  return (
-    <PokemonContext.Provider
-      value={{
-        data,
-        loading,
-        error,
-        getNextPage: () => {
-          const nextOffset = currentOffset + limit
-          fetchMore({
-            variables: {
-              offset: nextOffset,
-            },
-          })
-          setCurrentOffset(nextOffset)
-        },
-      }}
-    >
-      {children}
-    </PokemonContext.Provider>
-  )
-}
+import { PokemonProvider } from './context'
 
 const App = () => {
   return (
